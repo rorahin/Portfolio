@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Favicon/favicon.ico" sizes="114x114" />
+    <script type='module' src='./Script/methodtest.js'></script>
+    <title>Homework 5</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        * {
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href='./index.html'>
+        <h1> Homework 5</h1>
+        <h2>Method Test</h2>
+    </a>
+    <main>
+        <!-- // step 1 -->
+        <form id='form' method='get' enctype='application/x-www-form-urlencoded' action='https://httpbin.org/get'>
+
+            <div>
+                <label>
+                    ID:
+                    <input id='id' type='number' name='id' required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Article name:
+                    <input id='articleName' type='text' name='articleName' required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Article body:
+                    <textarea id="articleBody" name='articleBody' required>enter your article body...</textarea>
+                </label>
+            </div>
+            <fieldset id='postRequest'>
+                Post Request Generate:
+                <div>
+                    <label>
+                        XML:
+                        <input type="radio" id="request" name='request' checked>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Fetching:
+                        <input type="radio" id="fetching" name='fetching'>
+                    </label>
+                </div>
+            </fieldset>
+            <section id='buttons'>
+                Type of Request:
+                <button id='postBtn' value='POST' type='submit'>Post</button>
+                <button id='getBtn' value='GET' type='submit'>Get</button>
+                <button id='putBtn' value='PUT' type='submit'>Put</button>
+                <button id='deleteBtn' value='DELETE' type='submit'>Delete</button>
+            </section>
+
+        </form>
+        <!-- // setp 1 -->
+        <section>
+            <output id='response'></output>
+        </section>
+    </main>
+
+</body>
+
+</html>

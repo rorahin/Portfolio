@@ -1,0 +1,722 @@
+@import "https://unpkg.com/open-props"; 
+
+:root {
+    --main-color: black;
+    --default-margin: 10px;
+    --default-padding: 20px;
+    --default-border: 3px;
+    --default-borederradius: 20px;
+}
+
+@font-face {
+    font-family: becky;
+    src: url(/Fonts/becky-tahlia-font/BeckyTahlia-MP6r.ttf);
+    font-display: swap;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, becky, sans-serif;
+    color: rgb(0, 0, 0);
+    max-width: 1300px;
+    /* margin: auto; */
+}
+
+/*
+@keyframes colorchange {
+    from { color: blue; }
+    to { color: purple; }
+}
+
+.top-resume {
+    display: block;
+    animation-name: colorchange;    
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.top-resume:hover {
+    transition-property: font-size, background-color;
+    transition-duration: 5s;
+    font-size:x-large;
+    background-color: lightblue;
+    transform: rotate(-3deg);
+}
+
+header {
+    margin: var(--default-margin);
+    border: var(--default-border) solid grey;
+    border-radius: var(--default-borederradius);
+    text-align: center;
+    padding: 5px;
+    background-color:lightseagreen;
+}
+
+h2, .awards, footer {
+    text-decoration: underline;
+}
+
+img {
+    border: var(--default-border) solid teal;
+    border-radius: var(--default-borederradius);
+    /* filter: contrast(1);
+    filter: brightness(1.7); */
+    /*
+}
+
+#profileFigure {
+    border: var(--default-border) solid lightslategrey;
+    border-radius: var(--default-borederradius);
+    padding: var(--default-padding);
+    color: lightslategrey;
+    text-align: center;
+    float: left;
+}
+
+img::after {
+    position: absolute;
+    background-color: lightgray;
+    border: 0.1cm solid black;
+    content: "Image could not load";
+}
+
+@media (height > 600px) {
+    img {
+      margin: auto;
+    }
+  }
+
+img:hover {
+    box-shadow: 0 0 2px 4px lightslategrey;
+}
+
+#name {
+    font-family: becky, cursive;
+    font-size: 5em;
+    text-align: center;
+    float:inline-start;
+    color: lightslategrey;
+} 
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding: var(--default-padding);
+}
+
+#download{
+    float: right;
+    padding: var(--default-padding);
+}
+
+@media screen {
+    #titleInfo{
+    background-color: lightslategrey;
+    color: white;
+    font-size:large;
+    border-collapse:separate;
+    border-spacing: 20px;
+    width: 20cm;
+    }
+}
+
+.core {
+    margin-left: -20px;
+}
+
+.spacing {
+    float: right;
+}
+
+.experince {
+    border: var(--default-border) solid lightslategrey;
+    padding: var(--default-padding);
+    border-radius: var(--default-borederradius);
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 3fr 8fr; 
+    grid-gap: 20px;
+    grid-template-areas: "skills experince";
+}
+
+#skills {
+    grid-area: skills;
+    padding: var(--default-padding);
+}
+
+#events {
+    grid-area: experince;
+}
+
+.awards, footer {
+    border: var(--default-border) solid lightslategrey;
+    border-radius: var(--default-borederradius);
+    padding: var(--default-padding);
+    margin: var(--default-margin);
+
+}
+
+.contact, #download {
+    margin: -0.3cm;
+}
+
+main {
+    margin-top: -0.5cm;
+}
+
+*/
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*              Starting of New Styling                          */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*                  Page layout styling                          */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#top {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+    /* height: 100vh; */
+    grid-gap: 10px; /* add some space between grid items */
+    width: 100%;
+    /* height: 100vh;  */
+}
+
+.header-resume {
+    grid-row: 1;
+    grid-column: 1;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: larger;
+    margin-left: 4cm;
+    margin-right: 4cm;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#menu {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+#main {
+    /* border: red solid; */
+    grid-row: 3;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 550px;
+    width: 1200px;
+    grid-gap: 100px;
+    background-color: #ccc;
+    border-radius: 0.5cm;
+    margin-left: 3cm;
+    margin-right: 3cm;
+
+    /* text-align: center; */
+    /* align-self: center; */
+    /* align-items: center; */
+    /* justify-content: center;
+    align-items: center; */
+    
+    
+  }
+
+#main > #bio {
+    /* background-color: #ccc; */
+    padding: 50px;
+    /* text-align: center; */
+    /* max-width: 50%; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main > #profileFigure {
+
+    /* background-color: #ddd; */
+    /* padding: 250px; */
+    /* text-align: center; */
+    /* align-self: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* max-width: 50%; */
+    
+}
+
+/* TO BE COMPLETED */
+footer {
+    grid-row: 4;
+    grid-column: 1;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*              Menu bar / Hamburger style                       */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (min-width: 766px) {
+
+    #menu {
+        display: flex;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 0.5rem;
+        width: max-content;
+        height: max-content;
+        border: 0.1cm solid lightgrey;
+        border-radius: 0.5cm;
+    }
+    
+    .menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        margin-left: 0.5cm;
+        margin-right: 0.5cm;
+    }
+    
+    .menu li:hover {
+        border: lightskyblue solid 0.05cm;
+        border-radius: 0.5cm;
+    }
+    
+    .menu li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .menu li img {
+        /* background-color: white; */
+        /* padding: var(--default-padding); */
+    }
+    
+    .menu figcaption {
+        text-align: center;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+
+    #menu {
+        display: flex;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 0.5rem;
+        width: max-content;
+        height: max-content;
+        border: 0.1cm solid lightgrey;
+        border-radius: 0.2cm;
+    }
+
+    .menu {
+        list-style: none;
+        border: 0.2cm solid lightgrey;
+        border-radius: 0.2cm;
+        margin-top: var(--default-margin);
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 500;
+        width: auto;
+        background-color: #333;
+        padding: var(--default-padding);
+    }
+
+    .menu li {
+        display: block;
+        margin: 10px 0;
+        /* border: blueviolet solid; */
+    }
+
+    .menu li:hover {
+        border: lightskyblue solid;
+        border-radius: 0.2cm;
+    }
+
+    .menu li a {
+        border: #fff 1cm;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu img {
+        /* background-color: white; */
+        /* padding: var(--default-padding);         */
+    }
+
+    .menu figcaption {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: none;
+        display: block;
+        background-color: white;
+        border: 0.1cm solid lightgrey;
+        border-radius: 0.5cm;
+        align-items: center;
+    }
+  
+    .menu ul {
+        flex-direction: column;
+    }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*                 Profile Picture style                         */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#proPicCon {
+    position:absolute;
+    width: 280px;
+    height: 340px; 
+    padding: 20px;
+    margin: 30px;
+}
+  
+.photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+  
+.photo-front {
+    z-index: 1; /* Make sure front photo is on top */
+}
+  
+.photo-back {
+    z-index: 0;
+    transform: rotate(-25deg); /* Rotate back photo 45 degrees */
+}
+  
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*                 Bio style                                     */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#im {
+    color: red;
+    font-family:cursive;
+    font-size: larger;
+    padding-right: 5cm;
+}
+#name {
+    font-family:becky, cursive;
+    font-size: 3rem;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*                 footer style                                  */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+footer {
+    margin-left: 4cm;
+    margin-right: 4cm; 
+}
+
+.footerItem {
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+footer img {
+    /* background: black; */
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*                          CORE.HTML                            */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*                      main section style                       */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#coreHTML {
+    margin: 1cm;
+    width: max-content;
+}
+
+#coreHTML li {
+    margin-top: 1cm;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*                          education.HTML                       */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*                      main section style                       */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#edu {
+    margin: 1cm;
+    width: 60%;
+}
+.spacing {
+    float: right;
+}
+
+.eduDis {
+    padding: var(--default-padding);
+}
+
+#logo {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: 10px; 
+    width: 50%;
+    
+}
+
+#logo #ucsdLogo {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 0.5cm;
+}
+
+#logo #collogeLogo {
+    grid-row: 1;
+    grid-column: 2;
+    margin: 0.5cm;
+}
+
+#logo #ucsdCSELogo {
+    grid-row: 2;
+    grid-column: 1 / 3;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*                          education.HTML                       */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                               */
+/*                                                               */
+/*                      main section style                       */
+/*                                                               */
+/*                                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                           */
+/*                  Project HTML                             */
+/*                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+#mainProject {
+    height:fit-content;
+    width: 1200px;
+    background-color: #ccc;
+    border-radius: 0.5cm;
+    margin-left: 3cm;
+    margin-right: 3cm;
+    padding-bottom: 1cm;
+}
+
+#mainProject > h3 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: var(--default-padding);
+
+}
+
+
+project {
+    
+    /* width: 190%; */
+    /* height: fit-content;
+    column-count: 1;
+    column-gap: 20px;
+    background-color: rebeccapurple;
+    border-radius: 0.2cm; */
+    /* margin-left: 2cm;
+    margin-right: 2cm;
+    margin-top: 1cm; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* position: relative; */
+
+    
+}
+
+project button {
+
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: var(--default-margin);
+    /* margin-left: 10cm; */
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    /* float: right; */
+}
+
+
+project .content {
+    /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+    padding: 10px;
+    font-size: 14px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin: var(--default-margin);
+}
+
+
+/*  */
+.container {
+    position: relative;
+    /* width: 100%; */
+    /* color: red; */
+    height:auto;
+    column-count: 1;
+    column-gap: 20px;
+    border-radius: 0.2cm;
+    margin-left: 1cm;
+    margin-right: 2cm;
+    margin-top: 1cm;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+    background-color: rgb(70, 140, 198);
+}
+
+
+.container h3 {
+    margin: var(--default-margin);
+}
+  
+.container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(70, 140, 198);
+    border: none;
+    /* padding: 10px; */
+    font-size: 16px;
+    cursor: pointer;
+    margin: var(--default-margin);
+    margin-top: 0.3cm;
+}
+  
+.container #text-container {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(104, 244, 230);
+    border: 1px solid lightslategray;
+    margin: var(--default-margin);
+}
+  
+.container #text-container.hidden {
+    display: none;
+}
+  
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                           */
+/*                  Work Experinces HTML                     */
+/*                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+div span{
+    position: absolute;
+    /* top: 0; */
+    right: 2cm;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                           */
+/*                  About HTML                               */
+/*                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.aboutPnt {
+    padding: 0.5cm;
+}

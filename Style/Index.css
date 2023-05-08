@@ -1,0 +1,32 @@
+html {
+    
+    background: url(../Images/Background.jpeg) no-repeat center center fixed;
+
+    background-size: cover;
+}
+.welcome-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px gray;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.welcome-text a {
+    color: white;
+    text-decoration: none;
+}
+.welcome-text a:hover {
+    color: #b3b3b3;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
