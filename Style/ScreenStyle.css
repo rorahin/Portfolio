@@ -579,14 +579,43 @@ footer img {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 
+
 #mainProject {
-    height:fit-content;
+    /* height:fit-content; */
     width: 1200px;
     background-color: #ccc;
     border-radius: 0.5cm;
     margin-left: 3cm;
     margin-right: 3cm;
     padding-bottom: 1cm;
+}
+
+/* scroll section: mainProject*/
+.scroll-section {
+    height: 900px; /* Set the desired height of the scrollable section */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: rgb(81, 202, 20) rgb(239, 8, 8); /* Set the color of the scrollbar */
+
+}
+
+/* Customize the appearance of the scrollbar for webkit browsers (Chrome, Safari) */
+.scroll-section::-webkit-scrollbar {
+    width: 18px; /* Set the width of the scrollbar */
+    border: rgb(70, 140, 198) ;
+}
+  
+.scroll-section::-webkit-scrollbar-track {
+    background-color: black; /* Set the background color of the scrollbar track */
+    border: solid rgb(70, 140, 198);
+    border-radius: 5cm;
+
+}
+  
+.scroll-section::-webkit-scrollbar-thumb {
+    background-color: rgb(172, 205, 232); /* Set the color of the scrollbar thumb */
+    border: solid rgb(70, 140, 198);
+    border-radius: 5cm;
 }
 
 #mainProject > h3 {
