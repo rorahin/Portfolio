@@ -687,7 +687,7 @@ project .content {
     align-items:flex-start;
     padding: 10px;
     font-size: 14px;
-    background-color: rgb(104, 244, 230);
+    background-color: cornsilk;
     border: 1px solid lightslategray;
     margin: var(--default-margin);
 }
@@ -696,7 +696,9 @@ project .content {
     display: none;
 }
   
-
+.projectHypetlink {
+    color: black;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /*                                                           */
