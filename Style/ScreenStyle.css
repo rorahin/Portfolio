@@ -741,7 +741,6 @@ div span{
     }
 
     .header-resume {
-        display: none;
         padding: 0.1cm;
         margin: 0.1cm;
         width: 100%;
@@ -751,10 +750,10 @@ div span{
 
     body {
         font-size: 0.8em;
-        display: none;
     }
     
     #menu {
+        display: none;
         margin-top: -0.3cm;        
         /* display: flex; */
         /* align-items: center; */
