@@ -352,7 +352,7 @@ footer {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #proPicCon {
-    position:absolute;
+    position: absolute;
     width: 280px;
     height: 340px; 
     padding: 20px;
@@ -778,6 +778,7 @@ div span{
         width: auto;
         background-color: #333;
         padding: var(--default-padding);
+        z-index: 1;
     }
 
     .menu li {
@@ -785,6 +786,7 @@ div span{
         display: block;
         margin: 10px 0;
         /* border: blueviolet solid; */
+        
     }
 
     .menu li:hover {
@@ -808,6 +810,7 @@ div span{
         border: 0.1cm solid lightgrey;
         border-radius: 0.5cm;
         align-items: center;
+        
     }
   
     .menu ul {
@@ -832,6 +835,7 @@ div span{
         /* margin-left: 0.1cm; */
         /* width: 80%; */
         display: block;
+        /* position: static; */
     }
 
 
@@ -847,7 +851,8 @@ div span{
     }
 
     #proPicCon {
-        position: absolute;
+
+        /* position:  !important; */
     }
 
     #footer {
