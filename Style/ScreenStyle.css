@@ -741,6 +741,7 @@ div span{
     }
 
     .header-resume {
+        display: none;
         padding: 0.1cm;
         margin: 0.1cm;
         width: 100%;
@@ -749,10 +750,12 @@ div span{
     }
 
     body {
+        display: none;
         font-size: 0.8em;
     }
     
     #menu {
+        display: none;
         margin-top: -0.3cm;        
         /* display: flex; */
         /* align-items: center; */
@@ -837,7 +840,7 @@ div span{
     }
 
     #profileFigure {
-        /* display: none; */
+        display: none;
     }
     
 }
