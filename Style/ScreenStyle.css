@@ -814,9 +814,9 @@ div span{
 
     #main {
         margin-left: 0.1cm;
-        display: none;
-        /* width: 100%; */
-        /* display: block; */
+        /* display: none; */
+        width: 80%;
+        display: block;
     }
 
 
