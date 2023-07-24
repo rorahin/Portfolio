@@ -724,6 +724,13 @@ div span{
 }
 
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*                                                           */
+/*                  media screen                               */
+/*                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
 @media screen and (max-width: 414px) {
 
     * {
@@ -767,7 +774,7 @@ div span{
         display: none;
         position: absolute;
         top: 50px;
-        left: 500;
+        left: 10px;
         width: auto;
         background-color: #333;
         padding: var(--default-padding);
@@ -811,10 +818,6 @@ div span{
         margin-left: 0.1cm;
     }
 
-    .menuItem {
-        width: 10 strong;
-        height: 20 strong;
-    }
 
 
     #main {
