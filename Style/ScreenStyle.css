@@ -753,7 +753,6 @@ div span{
     }
     
     #menu {
-        display: none;
         margin-top: -0.3cm;        
         /* display: flex; */
         /* align-items: center; */
@@ -767,6 +766,8 @@ div span{
     }
 
     .menu {
+        display: none;
+
         list-style: none;
         border: 0.2cm solid lightgrey;
         border-radius: 0.2cm;
@@ -781,23 +782,30 @@ div span{
     }
 
     .menu li {
+        display: none;
+
         display: block;
         margin: 10px 0;
         /* border: blueviolet solid; */
     }
 
     .menu li:hover {
+        display: none;
         border: lightskyblue solid;
         border-radius: 0.2cm;
     }
 
     .menu li a {
+        display: none;
+
         border: #fff 1cm;
         color: #fff;
         text-decoration: none;
     }
 
     .menu figcaption {
+        display: none;
+
         text-align: center;
     }
 
@@ -811,16 +819,19 @@ div span{
     }
   
     .menu ul {
+        display: none;
         flex-direction: column;
     }
 
     #main {
+        display: none;
         margin-left: 0.1cm;
     }
 
 
 
     #main {
+        display: none;
         width: 100%;
         display: block;
     }
