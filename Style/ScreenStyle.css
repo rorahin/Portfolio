@@ -753,6 +753,7 @@ div span{
     }
     
     #menu {
+        position: static;
         margin-top: -0.3cm;        
         /* display: flex; */
         /* align-items: center; */
@@ -780,6 +781,7 @@ div span{
     }
 
     .menu li {
+        /* z-index: 1; */
         display: block;
         margin: 10px 0;
         /* border: blueviolet solid; */
@@ -813,30 +815,38 @@ div span{
     }
 
     #main {
-        margin-left: 0.1cm;
-        width: 80%;
+        all: initial;
+
+        /* grid-row: 3; */
+        /* grid-column: 1; */
+        /* display: grid; */
+        /* grid-template-columns: 2fr 2fr; */
+        height: 180%;
+        width: 100%;
+        /* grid-gap: 100px; */
+        background-color: #ccc;
+        /* border-radius: 0.5cm; */
+        /* margin-left: 3cm; */
+        /* margin-right: 3cm; */
+
+        /* margin-left: 0.1cm; */
+        /* width: 80%; */
         display: block;
     }
 
-    aside {
-        display: none;
+
+
+
+    .photo {
+        /* position: absolute; */
+        width: 90%;
+        height: 90%;
+        /* z-index: 2; */
+        /* position: relative; */
     }
 
-    #disc {
-        display: none;
-    }
-
-    #name {
-        display: none;
-    }
-
-    #im {
-        display: none;
-    }
-
-
-
-    #profileFigure {
+    #proPicCon {
+        position: fixed;
     }
 
     #footer {
