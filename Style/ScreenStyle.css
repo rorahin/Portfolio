@@ -760,7 +760,7 @@ div span{
         background-color: #333;
         color: #fff;
         padding: 0.2rem;
-        width: 100%;
+        width: max-content;
         height: max-content;
         border: 0.1cm solid lightgrey;
         border-radius: 0.2cm;
@@ -826,7 +826,7 @@ div span{
     }
 
     #profileFigure {
-        
+        display: none;
     }
     
 }
