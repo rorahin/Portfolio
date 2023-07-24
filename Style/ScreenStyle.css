@@ -734,6 +734,7 @@ div span{
 @media screen and (max-width: 414px) {
 
     * {
+        display: none;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -826,7 +827,7 @@ div span{
     }
 
     #profileFigure {
-        display: none;
+        /* display: none; */
     }
     
 }
