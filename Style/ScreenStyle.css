@@ -340,70 +340,7 @@ footer {
 
 @media screen and (max-width: 767px) {
 
-    #menu {
-        display: flex;
-        align-items: center;
-        background-color: #333;
-        color: #fff;
-        padding: 0.5rem;
-        width: max-content;
-        height: max-content;
-        border: 0.1cm solid lightgrey;
-        border-radius: 0.2cm;
-    }
 
-    .menu {
-        list-style: none;
-        border: 0.2cm solid lightgrey;
-        border-radius: 0.2cm;
-        margin-top: var(--default-margin);
-        display: none;
-        position: absolute;
-        top: 50px;
-        left: 500;
-        width: auto;
-        background-color: #333;
-        padding: var(--default-padding);
-    }
-
-    .menu li {
-        display: block;
-        margin: 10px 0;
-        /* border: blueviolet solid; */
-    }
-
-    .menu li:hover {
-        border: lightskyblue solid;
-        border-radius: 0.2cm;
-    }
-
-    .menu li a {
-        border: #fff 1cm;
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .menu img {
-        /* background-color: white; */
-        /* padding: var(--default-padding);         */
-    }
-
-    .menu figcaption {
-        text-align: center;
-    }
-
-    .hamburger {
-        display: none;
-        display: block;
-        background-color: white;
-        border: 0.1cm solid lightgrey;
-        border-radius: 0.5cm;
-        align-items: center;
-    }
-  
-    .menu ul {
-        flex-direction: column;
-    }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -523,7 +460,7 @@ footer img {
     grid-column: 1;
     display: grid;
     grid-template-columns: 2fr 2fr;
-    height: max-content
+    height: max-content;
     width: 1200px;
     grid-gap: 100px;
     background-color: #ccc;
@@ -787,11 +724,116 @@ div span{
 }
 
 
+@media screen and (max-width: 375px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header-resume {
+        padding: 0.1cm;
+        margin: 0.1cm;
+        width: 70%;
+        font-size: small;
+        align-items: center;
+    }
+
+    body {
+        font-size: 0.8em;
+        display: none;
+    }
+    
+    #menu {
+        margin-top: -0.3cm;        
+        /* display: flex; */
+        /* align-items: center; */
+        background-color: #333;
+        color: #fff;
+        padding: 0.2rem;
+        width: max-content;
+        height: max-content;
+        border: 0.1cm solid lightgrey;
+        border-radius: 0.2cm;
+    }
+
+    .menu {
+        list-style: none;
+        border: 0.2cm solid lightgrey;
+        border-radius: 0.2cm;
+        margin-top: 1cm;
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 500;
+        width: auto;
+        background-color: #333;
+        padding: var(--default-padding);
+    }
+
+    .menu li {
+        display: block;
+        margin: 10px 0;
+        /* border: blueviolet solid; */
+    }
+
+    .menu li:hover {
+        border: lightskyblue solid;
+        border-radius: 0.2cm;
+    }
+
+    .menu li a {
+        border: #fff 1cm;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu figcaption {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: none;
+        display: block;
+        background-color: white;
+        border: 0.1cm solid lightgrey;
+        border-radius: 0.5cm;
+        align-items: center;
+    }
+  
+    .menu ul {
+        flex-direction: column;
+    }
+
+    #main {
+        margin-left: 0.1cm;
+    }
+
+    .menuItem {
+        width: 10 strong;
+        height: 20 strong;
+    }
+
+
+    #main {
+        width: 70%;
+        display: block;
+    }
+
+    #profileFigure {
+        
+    }
+    
+}
+
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /*                                                           */
 /*                  Screen Pages                             */
 /*                                                           */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 
 
