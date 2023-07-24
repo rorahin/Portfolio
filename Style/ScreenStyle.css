@@ -743,7 +743,7 @@ div span{
     .header-resume {
         padding: 0.1cm;
         margin: 0.1cm;
-        width: 95%;
+        width: 100%;
         font-size: small;
         align-items: center;
     }
@@ -821,7 +821,7 @@ div span{
 
 
     #main {
-        width: 95%;
+        width: 100%;
         display: block;
     }
 
