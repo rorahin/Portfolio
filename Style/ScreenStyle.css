@@ -826,6 +826,14 @@ div span{
         display: none;
     }
 
+    #name {
+        display: none;
+    }
+
+    #im {
+        display: none;
+    }
+
 
 
     #profileFigure {
