@@ -734,7 +734,6 @@ div span{
 @media screen and (max-width: 414px) {
 
     * {
-        display: none;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -742,6 +741,7 @@ div span{
     }
 
     .header-resume {
+        display: none;
         padding: 0.1cm;
         margin: 0.1cm;
         width: 100%;
