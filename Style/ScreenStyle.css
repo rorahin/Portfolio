@@ -724,7 +724,7 @@ div span{
 }
 
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 390px) {
 
     * {
         margin: 0;
