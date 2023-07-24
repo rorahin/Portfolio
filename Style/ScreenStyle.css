@@ -814,13 +814,15 @@ div span{
 
     #main {
         margin-left: 0.1cm;
+        display: none;
+        /* width: 100%; */
+        /* display: block; */
     }
 
 
 
     #main {
-        width: 100%;
-        display: block;
+        
     }
 
     #profileFigure {
@@ -829,6 +831,8 @@ div span{
     #footer {
         display: none;
     }
+
+
     
 }
 
