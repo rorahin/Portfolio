@@ -865,6 +865,33 @@ div span{
         /* display: none; */
     }
 
+    #mainProject {
+        all: initial;
+        background-color:#ccc;
+        width: auto;
+        height:fit-content;
+        padding-bottom: 1cm;
+    }
+
+    #mainProject > h3:first-of-type {
+        /* background-color: red; */
+        padding-top: 0.4cm;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    #mainProject > h3 {
+        padding-top: 1cm ;
+        padding-bottom: 0.2cm;
+        /* background-color: red; */
+    }
+    .exp {
+        padding-left: 0.5cm;
+    }
+
+
     #edu {
         /* all: initial; */
         /* margin: 0.5cm; */
