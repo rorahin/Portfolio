@@ -432,7 +432,7 @@ footer img {
 
 #coreHTML {
     margin: 1cm;
-    width: max-content;
+    width: 100%;
 }
 
 #coreHTML li {
@@ -825,7 +825,7 @@ div span{
         /* grid-column: 1; */
         /* display: grid; */
         /* grid-template-columns: 2fr 2fr; */
-        height: 200%;
+        height: 180%;
         width: 100%;
         /* grid-gap: 100px; */
         background-color: #ccc;
@@ -839,6 +839,50 @@ div span{
         /* position: static; */
     }
 
+    #coreHTML {
+        padding-right: 1cm;
+        height: 9cm;
+    }
+
+    #coreHTML li{
+        padding-right: 1cm;
+    }
+
+    #mainEducation {
+        all: initial;
+        background-color: #ccc;
+        /* border-radius: 0.5cm; */
+        margin: 0.1cm;
+    }
+
+    #edu {
+        /* all: initial; */
+        /* margin: 0.5cm; */
+        /* padding: 1cm; */
+        /* display: none; */
+        width: 100%;
+        border: blue 1cm;
+    }
+
+    .spacing {
+        /* all: initial; */
+        /* float: left; */
+        /* width: 60%; */
+        /* margin-top: -0.6cm; */
+        margin-right: 2cm;
+        /* display: none; */
+        
+    }
+
+    .logos {
+        all: initial;
+        width: 4cm;
+    }
+
+    #ucsdCSELogo {
+        width: 8cm;
+        margin-left: 1cm;
+    }
 
 
 
@@ -861,19 +905,18 @@ div span{
         /* all: initial; */
         /* width: 200%; */
         margin: auto;
-        margin-top: 11cm;
+        margin-top: 9cm;
         padding: 10px 40px 10px 40px;
         /* background-color: #333; */
         /* display: flex;
         flex-shrink: 0; */
 
-
-
     }
     .footerItem{
         margin: auto;
-
     }
+
+    
 
 
     
