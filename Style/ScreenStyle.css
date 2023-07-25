@@ -736,8 +736,7 @@ div span{
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-        
+        box-sizing: border-box;        
     }
 
     .header-resume {
@@ -746,6 +745,7 @@ div span{
         width: 98%;
         font-size: small;
         align-items: center;
+
     }
 
     body {
@@ -753,6 +753,7 @@ div span{
     }
     
     #menu {
+
         position: static;
         margin-top: -0.2cm;
         /* margin-bottom: 0cm;         */
@@ -840,8 +841,13 @@ div span{
     }
 
     #coreHTML {
-        padding-right: 1cm;
+        /* display: none; */
+        width:auto;
+        /* padding-right: 1cm; */
         height: 9cm;
+    }
+    #coreHTML section {
+        /* display: none; */
     }
 
     #coreHTML li{
@@ -849,10 +855,14 @@ div span{
     }
 
     #mainEducation {
+        
         all: initial;
         background-color: #ccc;
         /* border-radius: 0.5cm; */
-        margin: 0.1cm;
+        /* margin: 0.1cm; */
+        
+        width: auto;
+        /* display: none; */
     }
 
     #edu {
@@ -860,7 +870,7 @@ div span{
         /* margin: 0.5cm; */
         /* padding: 1cm; */
         /* display: none; */
-        width: 100%;
+        width: auto;
         border: blue 1cm;
     }
 
@@ -914,6 +924,14 @@ div span{
     }
     .footerItem{
         margin: auto;
+    }
+
+    .footerOFF {
+        all: initial;
+        margin: auto;
+        background-color: #333;
+        padding: 10px 40px 10px 40px;
+
     }
 
     
