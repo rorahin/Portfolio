@@ -754,7 +754,8 @@ div span{
     
     #menu {
         position: static;
-        margin-top: -0.3cm;        
+        margin-top: -0.2cm;
+        /* margin-bottom: 0cm;         */
         /* display: flex; */
         /* align-items: center; */
         background-color: #333;
@@ -855,8 +856,23 @@ div span{
         /* position:  !important; */
     }
 
-    #footer {
-        display: none;
+    footer {
+        /* display: none; */
+        /* all: initial; */
+        /* width: 200%; */
+        margin: auto;
+        margin-top: 11cm;
+        padding: 10px 40px 10px 40px;
+        /* background-color: #333; */
+        /* display: flex;
+        flex-shrink: 0; */
+
+
+
+    }
+    .footerItem{
+        margin: auto;
+
     }
 
 
