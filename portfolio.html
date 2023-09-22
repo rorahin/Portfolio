@@ -140,8 +140,8 @@
             <img src='./Images/menuBtn4.png' rel='menuBar' alt='Menu Bar' height='35' width='35'>
         </button>
     </nav>
-    <footer id='footer'>
-        <a class='footerItem' id="githubME" href="https://GitHub.com" title="GitHub: rorahin">
+    <footer id="footer">
+        <a class="footerItem" id="githubME" onclick="showModal()" title="GitHub: rorahin">
             <img src="Images/icons8-github-100.png" alt="GitHub: rorahin" height="70" width="70">
         </a>
 
@@ -159,6 +159,59 @@
             <img src="Images/icons8-downloading-updates-64.png" alt="download resume as a PDF" height="70" width="70">
         </a>
     </footer>
+
+    <div id="choiceModal" class="modal">
+        <div class="modal-content">
+            <p>Which GitHub would you like to visit?</p>
+            <button onclick="redirectTo('personal')">Personal</button>
+            <button onclick="redirectTo('academic')">Academic</button>
+            <button onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+
+
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .modal-content {
+            background-color: #f4f4f4;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+            text-align: center;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        function showModal () {
+            document.getElementById('choiceModal').style.display = "block";
+        }
+
+        function closeModal () {
+            document.getElementById('choiceModal').style.display = "none";
+        }
+
+        function redirectTo (choice) {
+            document.getElementById('choiceModal').style.display = "none";
+            if (choice === 'personal') {
+                window.location.href = "https://github.com/rudyorahin";
+            } else {
+                window.location.href = "https://github.com/rorahin"; // Replace with academic URL if different
+            }
+        }
+    </script>
+
 </body>
 
 </html>
