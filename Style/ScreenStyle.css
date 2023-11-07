@@ -869,18 +869,28 @@ div span{
     }
 
     #coreHTML {
+        /* all:initial; */
+
         /* display: none; */
-        width:auto;
+        width: 90%;
         /* padding-right: 1cm; */
-        height: 9cm;
+        /* height: 100%; */
+        height: 10cm;
+        /* padding: 0; */
+        /* margin: 0; */
+        box-sizing: border-box; /* Ensures padding is included in the width */
+        overflow-y: auto; /* Adds a scrollbar if content is too long */
     }
+    
     #coreHTML section {
         /* display: none; */
     }
 
     #coreHTML li{
-        padding-right: 1cm;
+        /* padding-right: 1cm; */
+        height: 100;
     }
+    
 
     #mainEducation {
         
