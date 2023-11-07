@@ -432,12 +432,40 @@ footer img {
 
 #coreHTML {
     margin: 1cm;
-    width: 100%;
+    width: 200%; /* Ensure the parent container allows for this width */
+    padding: 1em; /* Provides some inside space for the content */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    overflow-y: auto; /* Adds a scrollbar if content is too long */
 }
 
-#coreHTML li {
-    margin-top: 1cm;
+#coreHTML section {
+    /* display: flex; */
+    /* flex-direction: column; */
 }
+
+#coreHTML h2 {
+    margin-bottom: 0.5em; /* Adjust space below the h2 */
+}
+
+#coreHTML .core {
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+#coreHTML .core li {
+    margin-top: 0.5em; /* Reduced space between list items */
+    margin-bottom: 0.5em; /* Adds space below list items */
+    line-height: 1.5; /* Adjusts the space between lines of text */
+}
+
+/* Add any specific styles for the code element if necessary */
+#coreHTML code {
+    background-color: #f0f0f0; /* Gives a distinct background */
+    padding: 2px 4px; /* Adds space inside the code element */
+    border-radius: 4px; /* Optional: Rounds the corners */
+}
+
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /*                                                               */
